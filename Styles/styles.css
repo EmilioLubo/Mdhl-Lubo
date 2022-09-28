@@ -1,0 +1,349 @@
+/*All*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+body{
+    background-color: whitesmoke;
+}
+/*NavBar*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    border-bottom: dotted green;
+    border-width: thin;
+    background-color: whitesmoke;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    text-shadow: 1px 1px yellow;
+    font-size: 1.2em;
+    padding: 0.2rem;
+}
+nav a:hover{
+    color: black;
+    text-shadow: 1px 1px green;
+}
+.active{
+    border-style: dotted;
+    border-color: green;
+    border-width: medium;
+    border-radius: 45%;
+}
+/*Header*/
+header{
+    position: relative;
+    height: 30vh;
+}
+.header__bg{
+    opacity: 0.3;
+    position: absolute;
+    bottom: -22rem;
+    width: 100%;
+    z-index: -1;
+}
+.header__logo{
+    position: absolute;
+    left: 1rem;
+    top: 11rem;
+    width: 150px;
+}
+h1{ 
+    display: flex;
+    justify-content: end;
+    margin-top: 5rem;
+    padding-right: 7rem;
+    text-shadow: 1px 1px yellow;
+    font-size: 2em;
+}
+h2{
+    color: whitesmoke;
+    text-align: center;
+    background-color: black;
+    border-top: dotted thin green;
+    border-bottom: dotted thin green;
+}
+/*main/section*/
+main, .section__main{
+    display: flex;
+    justify-content: space-around;
+    background-color: whitesmoke;
+}
+h6{
+    display: none;
+}
+main section, .section__container{
+    margin: 2rem 3rem;
+}
+h3{
+    margin-top: 2rem;
+}
+p{
+    text-indent: 2rem;
+}
+main img, .section__image{
+    margin: 2rem 1rem;
+    width: 50%;
+    border-style: dotted;
+    border-width: thin;
+    border-color: green;
+    border-radius: 20%;
+    height: min-content;
+}
+/*Rules & Policies*/
+.policies{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    padding: 1rem 5rem 5rem 5rem;
+}
+.policies__title{
+    border: none;
+    color: black;
+    background-color: whitesmoke;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2.policies__title{
+    font-size: 1.2em;
+}
+h4.policies__title{
+    font-size: 1.2em;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+}
+.policies__subtitle{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1rem;
+}
+.policies__text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 1rem;
+}
+section>ol>li{
+    margin-bottom: 1rem;
+}
+section>ol>li>p{
+    display: inline;
+    margin: 1rem 0rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ol{
+    list-style-position: inside;
+}
+li ol{
+    margin-bottom: -1.5rem;
+}
+li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+li h3{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+ul{
+    margin-top: -1rem;
+    margin-left: 4rem;
+    list-style-type: circle;
+    list-style-position: inside;
+}
+/*Information*/
+.inf__section{
+    background-image: url('../Assets/hockey4.jpg');
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    padding: 2rem 10rem;
+    background-color: whitesmoke;
+}
+.inf__title{
+    color: black;
+    display: flex;
+    justify-content: end;
+    background-color: transparent;
+    font-family: 'Roboto Mono', monospace;
+    border: none;
+    font-size: 2.2em;
+    font-weight: lighter;
+    padding-right: 1rem;
+    z-index: 1;
+}
+.inf__subtitle{
+    font-family: 'Roboto Mono', monospace;
+    font-style: italic;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    margin: 0.5rem;
+    z-index: 0;
+
+}
+.inf__clarif{
+    text-decoration: underline;
+    font-family: 'Roboto Mono', monospace;
+    font-style: italic;
+    font-size: 1em;
+    font-weight: lighter;
+    margin-top: 1rem;
+    z-index: 1;
+}
+table{
+    font-size: 1.2rem;
+    width: 100%;
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+}
+tbody tr{
+    overflow: hidden;
+    height: 3rem;
+    white-space: nowrap;
+}
+tbody tr:hover{
+    box-shadow: 1px 1px black;
+}
+.tr__up:hover{
+    box-shadow: 1px -1px black; 
+}
+th{
+    text-decoration: underline;
+}
+.inf__dates{
+    text-align: center;
+}
+th, td{
+    font-family: 'Roboto Mono', monospace;
+    padding: 0.5rem;
+    text-align: center;
+}
+dl{
+    display: flex;
+    flex-direction: column;
+}
+div{
+    padding: 1rem 0rem;
+}
+.div__margin{
+    padding-top: 2rem;
+}
+dt{
+    font-weight: bolder;
+}
+dt, dd{
+    display: inline;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.1em;
+}
+.dl__2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*Registration*/
+.reg__section{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem 7rem;
+}
+.reg__title{
+    text-align: center;
+    font-size: 2em;
+}
+form{
+    margin: 5% 15%;
+    padding: .5rem;
+    border: 2px solid green;
+    font-size: 1.2em;
+}
+fieldset{
+    border: none;
+    display: flex;
+    gap: 2rem;
+    margin: 1rem 0rem;
+}
+.form__block{
+    margin: 3rem 0rem;
+}
+.field__gender{
+    margin-top: 0rem;
+}
+.last__field{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.field__buttons{
+    display: flex;
+    justify-content: center;
+}
+legend{
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+.address .grade{
+    margin: 0rem .5rem;
+}
+input, select{
+    font-size: .8em;
+}
+input[name=address]{
+    width: 60%;
+}
+.checks{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+fieldset p{
+    text-indent: 0%;
+    font-size: 0.8em;
+}
+.sign__below{
+    font-size: 0.8em;
+    margin-top: -2rem;
+}
+.agree{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0rem;
+}
+.button{
+    width: 10rem;
+    border: solid;
+    border-radius: 5%;
+}
+.button:hover{
+    background-color: black;
+    border-color: yellow;
+    color: whitesmoke;
+}
+/*Body's foot design*/
+hr{
+    height: 3px;
+}
+.red{
+    color: red;
+    background-color: red;
+}
+.green{
+    color: green;
+    background-color: green;
+}
+.yellow{
+    color: yellow;
+    background-color: yellow;
+}
+.black{
+    color: black;
+    background-color: black;
+}

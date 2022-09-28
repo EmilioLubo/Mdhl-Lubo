@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mighty Ducks Hockey League - Registration Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300;1,400;1,500&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="../Assets/LogoMightyDucks-01.png">
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <!--NavBar-->
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="./information.html">Information</a>
+            <a href="./rules&policies.html">Rules & Policies</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./about_us.html">About Us</a>
+            <a class="active" href="reg_form.html">Registration</a>
+        </nav>
+        <!--Header background image-->
+        <img class="header__bg" src="../Assets/design1_image1.jpg" alt="Header image">
+        <!--Logo-->
+        <img class="header__logo" src="../Assets/LogoMightyDucks-01.png" alt="Logo">
+        <!--Header title-->
+        <h1>Mighty Ducks Hockey League</h1>
+
+    </header>
+    <!--Section title-->
+    <h2>Registration Form</h2>
+    <!--Main section-->
+    <section class="reg__section">
+        <h3 class="reg__title">Registration Form</h3>
+        <form action="../show_data.html" method="get">
+
+                <fieldset>
+                    <label>Player's First Name:
+                        <input type="text" name="name" required>
+                    </label>
+                    <label>Last Name:
+                        <input type="text" name="lname" required>
+                    </label>
+                </fieldset>
+                <label class="address">Street Address:
+                    <input type="text" name="address" required>
+                </label>
+                <fieldset>
+                    <label>City:
+                        <input type="text" name="city" required>
+                    </label>
+                    <label>Zip Code:
+                        <input type="number" name="zcode" required>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label>Birth Date:
+                        <input type="date"  name="bday" required>
+                    </label>
+                    <fieldset class="field__gender">Gender:
+                        <label>Female
+                            <input type="radio" name="gender" value="F" required>
+                        </label>
+                        <label>Male
+                            <input type="radio" name="gender" value="M" required>
+                        </label>
+                    </fieldset>
+                </fieldset>  
+                <label class="grade">Grade:
+                    <select name="grade" required>
+                        <option value="" selected="selected" hidden="hidden">Choose here</option>
+                        <option value="pre-school">Pre-School</option>
+                        <option value="first">1st</option>
+                        <option value="second">2nd</option>
+                        <option value="third">3rd</option>
+                        <option value="fourth">4th</option>
+                        <option value="fifth">5th</option>
+                    </select>
+                </label>
+                <fieldset class="form__block">
+                    <legend>Wich elementary school do you live near?</legend>
+                    <label>Closest School:
+                        <select name="school" required>
+                            <option value="" selected="selected" hidden="hidden">Choose here</option>
+                            <option value="aj_katzenmaier">AJ Katzenmaier</option>
+                            <option value="greenbay">Greenbay</option>
+                            <option value="howard_a_yeager">Howard A Yeager</option>
+                            <option value="marjorie_p_hart">Marjorie P Hart</option>
+                            <option value="north_elementary">North Elementary</option>
+                            <option value="south_elementary">South Elementary</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset class="form__block">
+                    <legend>What position(s) do you normally play? (check all that apply)</legend>
+                    <div class="checks">
+                        <label>Forward
+                            <input type="checkbox" name="position" value="forward">
+                        </label>
+                        <label>Defense
+                            <input type="checkbox" name="position" value="defense">
+                        </label>
+                    </div>
+                    <div class="checks">
+                        <label>Midfield
+                            <input type="checkbox" name="position" value="midfield">
+                        </label>
+                        <label>Goalkeeper
+                            <input type="checkbox" name="position" value="goalkeeper">
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset class="form__block">
+                    <legend>Uniform Size:</legend>
+                    <select name="uniform" required>
+                        <option value="" selected="selected" hidden="hidden">Choose here</option>
+                        <option value="youth_small">Youth Small</option>
+                        <option value="youth_medium">Youth Medium</option>
+                        <option value="youth_large">Youth Large</option>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="extra_large">Extra Large</option>
+                    </select>
+                </fieldset>
+                <fieldset class="agree">
+                    <legend>Permission to Play</legend>
+                    <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Mighty Ducks Hockey League(MDHL). In recognizing the possibility of physical injury associated with hockey and in consideration fot the "League" accepting the registrant for its hockey programs and activities, I here by release, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant's participation in the programa and/or being transported to or from MDHL sponsored activities, wich transportation.</p>
+                    <label class="sign__below">By signing below, I here by agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the cancellation policy and agree to its terms.
+                        <input type="checkbox" name="agree" value="OK" required>       
+                    </label>
+                </fieldset>
+
+                <fieldset class="last__field">
+                    <label>Parent/Guardian Signature:
+                        <input type="text" name="parent" required>
+                    </label>
+                    <label>Date:
+                        <input type="date" name="date" required>
+                    </label>
+                </fieldset>
+                
+                <fieldset class="field__buttons">
+                    <input class="button" type="reset" value="reset">
+                    <input class="button" type="submit" value="submit">
+                </fieldset>
+                
+        </form>
+    </section>
+    <!--Colored lines-->
+    <hr class="red">
+    <hr class="green">
+    <hr class="yellow">
+    <hr class="black">
+    <!--End of body-->
+</body>
+</html>
